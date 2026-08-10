@@ -1,3 +1,27 @@
-/* You can add global styles to this file, and also import other style files */
-
 @import 'tailwindcss';
+@import '@fontsource-variable/inter';
+
+@theme {
+  --breakpoint-*: initial;
+  --breakpoint-md: 48rem; 
+  --breakpoint-lg: 64rem; 
+  --container-content: 1542px;
+
+  --font-sans: 'Inter Variable', 'Inter';
+  --text-title: 1.5rem;
+  --text-title--line-height: 1.75rem;
+  --text-title--font-weight: 700;
+
+  --shadow-card: 0 2px 4px 0 rgb(0 0 0 / 0.2);
+
+  --color-custom-gray: #F4F4F5;
+  --color-ink: #343A40;
+  --color-custom-red: #E4002B;
+}
+
+
+@layer base {
+  body {
+    color: var(--color-ink);
+  }
+}
