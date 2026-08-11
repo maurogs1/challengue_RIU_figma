@@ -9,6 +9,7 @@ import { Component, input } from '@angular/core';
 export class GalleryCard {
 
   src = input<string>();
+  srcset = input<string>();
   alt = input<string>();
   title = input<string>();
   subtitle = input<string>();

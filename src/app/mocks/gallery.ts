@@ -1,41 +1,38 @@
-export interface GalleryItem {
-  id: number;
-  src: string;
-  alt: string;
-  title: string;
-  subtitle: string;
-  downloadText: string;
-}
 
-export const gallery: GalleryItem[] = [
+
+export const gallery: any[] = [
   {
     id: 1,
-    src: 'hero.jpg',
-    alt: 'hero alt',
+    src: 'images/gallery-2x.jpg',
+    srcset: 'images/gallery.jpg 362w, images/gallery-2x.jpg 723w',
+    alt: '',
     title: 'Lorem ipsum',
     subtitle: 'Lorem ipsum dolor sit amet consectetur.',
     downloadText: 'Lorem ipsum',
   },
   {
     id: 2,
-    src: 'hero.jpg',
-    alt: 'hero alt',
+    src: 'images/gallery-2x.jpg',
+    srcset: 'images/gallery.jpg 362w, images/gallery-2x.jpg 723w',
+    alt: '',
     title: 'Lorem ipsum',
     subtitle: 'Lorem ipsum dolor sit amet consectetur.',
     downloadText: 'Lorem ipsum',
   },
   {
     id: 3,
-    src: 'hero.jpg',
-    alt: 'hero alt',
+    src: 'images/gallery-2x.jpg',
+    srcset: 'images/gallery.jpg 362w, images/gallery-2x.jpg 723w',
+    alt: '',
     title: 'Lorem ipsum',
     subtitle: 'Lorem ipsum dolor sit amet consectetur.',
     downloadText: 'Lorem ipsum',
   },
   {
     id: 4,
-    src: 'hero.jpg',
-    alt: 'hero alt',
+    src: 'images/gallery-2x.jpg',
+    srcset: 'images/gallery.jpg 362w, images/gallery-2x.jpg 723w',
+    alt: '',
     title: 'Lorem ipsum',
     subtitle: 'Lorem ipsum dolor sit amet consectetur.',
     downloadText: 'Lorem ipsum',

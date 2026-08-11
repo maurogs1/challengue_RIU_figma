@@ -1,9 +1,15 @@
-<article class="flex flex-col gap-4">
-    <img src="images/{{src()}}" alt="{{alt()}}" class="rounded-lg">
-    <div class="flex items-center gap-2">
-        <img src="icons/{{imgSubtitle()}}.svg" width="24" height="24" alt="{{alt()}}" class="inline-block w-6 h-6">
-        <p class="text-base font-bold">{{subtitle()}}</p>
+<article class="flex flex-1 flex-col gap-4" >
+    <img [src]="src()" [srcset]="srcset()"
+         sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+         [alt]="alt()" loading="lazy"
+         class="w-full aspect-video rounded-lg object-cover">
+
+    <div class="flex flex-1 flex-col justify-between gap-4">
+        <div class="flex items-center gap-2">
+            <img src="icons/{{imgSubtitle()}}.svg" width="24" height="24" alt="" class="inline-block w-6 h-6">
+            <p class="text-base font-bold">{{subtitle()}}</p>
+        </div>
+        <h3 class="text-[23px]/[25px] md:text-3xl/[38px] font-bold text-black line-clamp-2">{{title()}}</h3>
+        <p class="text-base line-clamp-6"> {{text()}} </p>
     </div>
-    <h3 class="text-[23px]/[25px] font-bold text-black">{{title()}}</h3>
-    <p class="text-base line-clamp-6"> {{text()}} </p>
 </article>

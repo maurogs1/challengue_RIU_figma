@@ -1,0 +1,23 @@
+:host {
+  flex-shrink: 0;
+  width: 284px;
+  max-width: 70%;
+  height: 378px;
+}
+
+
+@media (min-width: 48rem) {
+  :host { 
+    width: 360px;
+    max-width: 90%; 
+    height: 480px;
+  }
+}
+@media (min-width: 64rem) {
+  :host {
+    flex: 1;
+    min-width: 0;
+    max-width: none;
+    height: 482px;
+  }
+}
