@@ -3,16 +3,27 @@
 
 @theme {
   --breakpoint-*: initial;
-  --breakpoint-md: 48rem; 
-  --breakpoint-lg: 64rem;  
+  --breakpoint-md: 48rem;
+  --breakpoint-lg: 64rem;
 
   --font-sans: 'Inter Variable', 'Inter';
+
+  --container-content: 96.375rem; /* 1542px este valor es el maximo que tiene el figma */ 
+  --text-section-title: 1.875rem;
+  --text-section-title--line-height: 2rem;
+  --text-section-title-lg: 3rem;
+  --text-section-title-lg--line-height: 3.625rem;
+  
+  --text-card-title: 1.4375rem;
+  --text-card-title--line-height: 1.5625rem;
+  --text-card-title-lg: 1.875rem;
+  --text-card-title-lg--line-height: 2.375rem;
+
   --shadow-card: 0 2px 4px 0 rgb(0 0 0 / 0.2);
   --color-custom-gray: #F4F4F5;
   --color-ink: #343A40;
   --color-custom-red: #E4002B;
 }
-
 
 @layer base {
   body {
